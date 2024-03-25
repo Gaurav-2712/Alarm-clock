@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock-row center">
+        <p id="clock" class="center"></p>
+      </div>
+
+      <div class="getthetimedata">
+        <div class="setalaram center">
+          <input type="number" min=0 max="12" id="gethour" placeholder="00" />
+          <input type="number" min=0 max="59" id="getminitue" placeholder="00" />
+          <select name="" id="Format">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+        <div class="title center">
+          <p>Hours</p>
+          <p>Minitue</p>
+          <p>Format</p>
+        </div>
+      </div>
+
+      <div class="add center">
+        <button id="addalarm">Add Alarm</button>
+      </div>
+
+      <div id="alarm-list">
+        
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
